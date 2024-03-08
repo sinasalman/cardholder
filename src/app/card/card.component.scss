@@ -1,4 +1,10 @@
-
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@font-face {
+    font-family: "vazir";
+    src: url(../../assets/vazir-font-v16.1.0/Vazir-Bold.ttf);
+}
 .Back{
     background: url(../../assets/interactive-card-details-form-main/images/bg-main-desktop.png);
     height: 100vh;
@@ -10,7 +16,101 @@
     background: url(../../assets/interactive-card-details-form-main/images/bg-card-front.png);
     width: 29.1vw;
     height: 33.1vh;
-    position: relative;
+    position: absolute;
     margin-left: 10vw;
-    top: 10vh;
+    top: 20vh;
+}
+.form{
+    height: 80vh;
+    width: 30vw;
+    display: block;
+    background: rgb(183,34,195);
+    background: linear-gradient(12deg, rgba(183,34,195,1) 0%, rgba(0,26,175,1) 100%);
+    margin-left: 50vw;
+    margin-top: 10vh;
+    position: absolute;
+    border-radius:15px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.cardInput{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+.btnCon{
+    margin-top: 1.5rem;
+    position: relative;
+}
+.btnHolder{
+    width: 100%;
+
+ 
+}
+.buttons{
+    user-select: none;
+    margin-top: 0.56rem;
+    border: none;
+    background: #31002f97;
+    color: white;
+    width: 20%;
+    height: 7vh;
+    font-size: 1.5rem;
+    margin-left: 0.56rem;
+    border-radius: 2rem;
+    &:hover{
+        scale: (1.02);
+        opacity: 0.9;
+    }
+    
+}
+.num{
+    width: 80%;
+    height: 100%;
+    margin-left:10%;
+    margin-top: 14vh;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+.text{
+    margin-top: 4vh;
+}
+.nameFam{
+    font-family: vazir , sans-serif;
+    margin-top: 1.5rem;
+    text-align: center;
+    direction: rtl;
+    background: #31002f97;
+    border: 0px solid;
+    height: 5vh;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 2rem;
+    color :white;
+    font-size: 1rem;
+   
+    &:hover{
+        border: none;   
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.confirm{
+    background: #31002f97;
+    color: rgb(134, 157, 137);
+    margin-top: 2rem;
+    height: 5vh;
+    width: 10vw;
+    border: none;
+    border-radius:2rem ;
+    font-size: 1rem;
+    &:hover{
+        transform: scale(1.05);
+        background-color: #0a410597;
+        transition: 0.3s ease;
+    }
 }

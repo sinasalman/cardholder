@@ -2,5 +2,27 @@
 
 </div>
 <div class="card">
-    
+    <div class="num">
+        {{cardNum}}
+    </div>
+    <div  class="name">
+        {{cardName}}
+        
+    </div>
+</div>
+<div class="form">
+    <div class="cardInput">
+        <span class="text">insert the number of your card</span>
+        <div class="btnCon">
+            <div *ngFor="let keys of keyArray" class="btnHolder">
+                <button *ngFor="let key of keys" class="buttons" (click)="numDisplay(key)">{{key}}</button>
+            </div>
+        </div>
+        <div class="text">
+            <span > insert your name and family</span>
+            <input #name (keyup)="onkey(name.value)" type="text" class="nameFam">
+            <div><button  class="confirm">confirm</button></div>
+            
+        </div>
+    </div>
 </div>
